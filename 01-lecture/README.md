@@ -2,7 +2,7 @@
 
 
 ## 1. Install [VS Code](https://code.visualstudio.com/). (We will work with the editor later)
-## 2. Install [Git](https://code.visualstudio.com/) and get familiar with the commands in [cli-commands.md](./cli-commands.md)
+## 2. Install [Git](https://git-scm.com/) and get familiar with the commands in [cli-commands.md](./cli-commands.md)
 - Mac uses the internal terminal. Fouind by seraching "terminal" in the search bar 
 - PC uses Git Bash, the CLI that followed with the Git installation
 ## 3. Try out Vim by using the commands in [vim-intro.md](./vim-intro.md)

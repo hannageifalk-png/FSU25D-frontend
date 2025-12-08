@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Used for settings and such -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>HTML intro</title>
+
+
+        <!-- 
+			There are 3 ways om implementing CSS. And they have different priority.
+			Priority order:
+				1. Inline (style="")                                    (Bad pratice)
+				2. Embedded (<style></style>)                           (Bad pratice)
+				3. Linked  (<link rel="stylesheet" href="css/reset.css">)  (Best pratice)
+
+			It's best practice to only use Linked stylesheet. It creates a more readable and structured code that will be easier to maintain
+		 -->
+
+
+        <!-- 
+			If 2 styles conflict on the same element, then the more specific a selector is, the higher priority it gets in CSS.
+			
+			Specificity order
+				1. ID selectors (#example)
+				2. Class selectors (.example)
+				3. Type selectors (div)
+
+            furthermore if 2 styles conflict on the same element, with the same priority. Then the latter declaration will override the previous style
+		-->
+
+        <!-- Embded CSS style internally -->
+        <style>
+            /* #main-container {
+                background-color: beige;;
+            }
+
+            .red-text {
+                color: red;
+            }
+            .blue-text {
+                color: blue;
+            }
+            h3 {
+                background-color: yellowgreen;
+            }
+
+            #bg-color-plum {
+                background-color: plum;
+            }
+            .bg-color-lightblue {
+                background-color: lightblue;
+            }
+            
+            .bg-color-coral {
+                background-color: coral;
+            }
+
+
+            h6 {
+                background-color: lightgray;
+            } */
+
+
+
+
+        </style>
+    </head>
+    
+    <!-- For elements that the end-user interacts with -->
+    <body>
+        <div id="main-container" class="class1 class2 class3">
+            <h1>HTML Intro (Hyper Text Markup Language)</h1>
+
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+            
+            <h1 >These are headlines in different sizes</h1>
+            <h2>These are headlines in different sizes</h2>
+            <h3>These are headlines in different sizes</h3>
+            <h4>These are headlines in different sizes</h4>
+            <h5>These are headlines in different sizes</h5>
+            <h6  class="bg-color-lightblue bg-color-coral">These are headlines in different sizes</h6>
+            
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+
+            <h3>Sections and texts</h3>
+            
+            <div>'< div >'General section-element. May contain other sections and components</div>
+            <p> '< p >' paragraph element. Used for texts</p>
+            
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+
+            <h3>Lists</h3>
+            
+            <ul>
+                <li class="red-text">'< ul >' unordered list. Contains listitems '< li >'</li>
+                <li>'< ul >' unordered list. Contains listitems '< li >'</li>
+                <li class="red-text">'< ul >' unordered list. Contains listitems '< li >'</li>
+            </ul>
+            
+            <ol>
+                <li class="blue-text">'< ol >' ordered list. Contains listitems '< li >'</li>
+                <li>'< ol >' ordered list. Contains listitems '< li >'</li>
+                <li class="blue-text">'< ol >' ordered list. Contains listitems '< li >'</li>
+            </ol>
+            
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+
+            <h3>Links</h3>
+
+            <a href="">A link that doesn't go anywhere</a>
+            <br>
+            <a href="https://google.se">A link to googles webpage</a>
+            <br>
+            <a href="subfolder/contact.html">A link to a local page contact.html</a>
+
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+        
+            <h3 width="100" height="auto">images</h3>
+            <!-- 
+                Why do we need to set alt text?
+                1. Accessibility for screen readers
+                2. SEO (Search Engine Optimization)
+                3. Shown when image fails to load
+            -->
+            <img src="img/logo.png" alt="A flower" width="100" height="auto">
+            
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+            
+            <h3>clickable images</h3>
+            <a href="https://google.se">
+                <img src="img/logo.png" alt="A flower" width="100" height="auto">
+            </a>
+            
+            <br><!-- Break row -->
+            <hr><!-- Horizontal line -->
+            <br><!-- Break row -->
+            
+            <h3>Components of a form. Textfields and button</h3>
+
+            <input type="text" value="Default value">
+            <br>
+            <input type="password" placeholder="Password...">
+            <br>
+            <button>Skicka</button>
+
+
+            <h3>Id and class</h3>
+
+			<p>
+				Id and class are attributes that can be placed in all elements (Global attributes). They are used by CSS and JS to target specific elements, so that they can be manipulated with design or dynamic functionalites. 
+				<ol>
+					<li>- A specific ID may be used only once in an HTML-document, while a specific class may be used multiple times.</li>
+					<li>- Furthermore a tag may have only one ID, but can have multiple classes.</li>
+				</ol>
+			</p>
+        </div>
+    </body>
+</html>

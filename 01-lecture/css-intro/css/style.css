@@ -1,0 +1,29 @@
+#main-container {
+    background-color: beige;;
+}
+
+.red-text {
+    color: red;
+}
+.blue-text {
+    color: blue;
+}
+h3 {
+    background-color: yellowgreen;
+}
+
+#bg-color-plum {
+    background-color: plum;
+}
+.bg-color-lightblue {
+    background-color: lightblue;
+}
+
+.bg-color-coral {
+    background-color: coral;
+}
+
+
+h6 {
+    background-color: lightgray;
+}

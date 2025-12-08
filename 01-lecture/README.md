@@ -22,3 +22,34 @@
     - git config --global user.email "your_email@example.com"
     - git config --list 
 - Simple versioncontroll through VS code
+
+
+
+## Reading:
+
+### HTML:
+* [HTML intro](https://www.w3schools.com/html/html_intro.asp)
+* [HTML basic](https://www.w3schools.com/html/html_basic.asp)
+* [HTML elements](https://www.w3schools.com/html/html_elements.asp)
+* [HTML attributes](https://www.w3schools.com/html/html_attributes.asp)
+* [HTML headings](https://www.w3schools.com/html/html_headings.asp)
+* [HTML paragraphs](https://www.w3schools.com/html/html_paragraphs.asp)
+* [HTML styles](https://www.w3schools.com/html/html_styles.asp)
+* [HTML formatting](https://www.w3schools.com/html/html_formatting.asp)
+* [HTML comments](https://www.w3schools.com/html/html_comments.asp)
+* [HTML links](https://www.w3schools.com/html/html_links.asp)
+* [HTML images](https://www.w3schools.com/html/html_images.asp)
+* [HTML lists](https://www.w3schools.com/html/html_lists.asp)
+* [HTML classes](https://www.w3schools.com/html/html_classes.asp)
+* [HTML id](https://www.w3schools.com/html/html_id.asp)
+
+### CSS:
+* [CSS intro](https://www.w3schools.com/css/css_intro.asp)
+* [CSS syntax](https://www.w3schools.com/css/css_syntax.asp)
+* [CSS selectors](https://www.w3schools.com/css/css_selectors.asp)
+* [CSS howto](https://www.w3schools.com/css/css_howto.asp)
+* [CSS comments](https://www.w3schools.com/css/css_comments.asp)
+* [CSS Specificity](https://www.w3schools.com/css/css_specificity.asp)
+* [CSS height/width](https://www.w3schools.com/css/css_dimension.asp)
+* [CSS units](https://www.w3schools.com/css/css_units.asp)
+

@@ -13,7 +13,14 @@
 - Search
 - Extensions
 - short commands in [vs-code-commands.md](./vs-code-commands.md)
-## 5. Git & Github intro
+## 5. HTML & CSS Intro
+- Study the code html-intro
+- Study the code css-intro
+- Do the exercises in [profile-page-exercises.md](./profile-page-exercises.md)
+## 6. Git & Github intro (If we have time)
 - Create Github account
 - Configurations, to connect local git with github account
-- Commands in [git-commands.md](./git-commands.md)
+    - git config --global user.name "Your Name"
+    - git config --global user.email "your_email@example.com"
+    - git config --list 
+- Simple versioncontroll through VS code

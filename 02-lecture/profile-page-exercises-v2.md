@@ -83,4 +83,4 @@
 * Sections such as header and footer
 * ...
 
-You can improve the page endlessly. Remeber to alwase versioncontrol by branching out at the beginning of development, and commit/merge at the completion of a part or a feature
+You can improve the page endlessly. Remeber to alwase versioncontrol by branching out at the beginning of a feature, and commit/merge at the completion of that feature

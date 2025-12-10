@@ -1,0 +1,236 @@
+:root {
+  font-size: 20px;
+}
+
+body {
+  height: 2000px;
+  margin: 0;
+}
+/* 
+ Absolute lengths
+ - Doesnt relate to anything. 500px is alwase the same regardless wof window/parent size
+*/
+.outer-container {
+  background-color: beige;
+  border: 2px solid black;
+  height: 700px;
+  margin: 20px;
+  width: 50%
+}
+
+.inner-container {
+  background-color: tomato;
+  border: 2px solid black;
+  height: 100px;
+  margin: 20px;
+}
+
+.width-px {
+  width: 50px;
+}
+.width-pt {
+  width: 50pt;
+}
+.width-pc {
+  width: 50pc;
+}
+
+/* 
+ Relative lengths
+ - grows/shriks depending on its reference point. Being the parent/window/font-size etc
+*/
+.width-procent {
+  width: 50%;
+}
+
+.width-vw {
+  width: 50vw;
+}
+
+.width-em {
+  width: 10em;
+  font-size: 10px;
+}
+
+.width-rem {
+  width: 10rem;
+  font-size: 10px;
+}
+
+
+/* 
+  auto
+  - takes up all available of the nearest parent,  space width-wise
+  - grows with content height-wise
+*/
+.width-auto {
+  height: auto; /* default value auto */
+  width: auto; /* default value auto */
+}
+
+
+/* 
+Hero styling
+*/
+#hero {
+  height: 100vh;
+  background-color: skyblue;
+}
+
+#hero h1 {
+  margin: 0;
+}
+
+
+/* 
+Box model
+*/
+
+#box-model {
+  background-color: beige;
+  height: 300px;
+
+  /**
+   * Padding
+   * - Controls the space inside of an element
+   */
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  /* short-hand, 4 values for all sides*/
+  padding: 20px 100px 20px 20px; /* top right bottom left*/
+
+  /* short-hand, 3 values for all sides*/
+  padding: 20px 50px 20px; /* top right/left bottom */
+
+  /* short-hand, 2 values for all sides*/
+  padding: 20px 20px; /* top/bottom right/left */
+
+  /* short-hand, 1 value for all sides*/
+  padding: 20px; /* top/bottom/right/left */
+
+  /**
+   * margin
+   * - Controls the space outside of an element
+   */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  /* short-hand, 4 values for all sides*/
+  margin: 20px 100px 20px 20px; /* top right bottom left*/
+
+  /* short-hand, 3 values for all sides*/
+  margin: 20px 50px 20px; /* top right/left bottom */
+
+  /* short-hand, 2 values for all sides*/
+  margin: 20px 20px; /* top/bottom right/left */
+
+  /* short-hand, 1 value for all sides*/
+  margin: 20px; /* top/bottom/right/left */
+
+
+  /* 
+    Borders
+  */
+  border-style: solid;
+  border-width: 5px;
+  border-color: orange;
+
+  /* short-hand */
+  border: 10px dashed orange; /* width style color */
+
+  border-right-style: none;
+  border-left-style: none;
+  border-top-style: groove;
+  border-radius: 10px
+}
+
+
+/* 
+Center element
+*/
+#centered-element {
+  background-color:  skyblue;
+  height: 300px;
+  width: 600px;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  /* short-hand */
+  margin: 0 auto; /* top/bottom left/right */
+}
+
+
+/*
+  Display: Block VS Inline VS Inline-block
+*/
+
+/**
+ * Block
+ * - It starts on a new line, and takes up the whole width
+ * - Is effected by properties that manipulates height/width
+ */
+
+ #block1 {
+  display: block; /* default value div */
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+ }
+ #block2 {
+  display: block; /* default value div*/
+  background-color: beige;
+  height: 100px;
+  width: 100px;
+ }
+
+
+ /**
+ * Inline
+ * - It doesn't starts on a new line, allwoing other elements to be placed beside it
+ * - Is NOT effected by properties that manipulates height/width
+ */
+#inline1 {
+  display: inline; /* default value for span */
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+ }
+ #inline2 {
+  display: inline; /* default value span */
+  background-color: beige;
+  height: 100px;
+  width: 100px;
+ }
+
+
+ /**
+ * Inline-block
+ * - It doesn't starts on a new line, allwoing other elements to be placed beside it
+ * - Is effected by properties that manipulates height/width
+ */
+#inline-block1 {
+  display: inline-block; 
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+#inline-block2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+}
+
+
+ #email {
+  color: orange;
+  text-decoration: underline;
+ }
+
+

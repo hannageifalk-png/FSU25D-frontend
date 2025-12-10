@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/nestedSemantics.css">
+</head>
+<body>
+ 
+<section class="colorScheme cf">
+	<h1>Color Scheme</h1>
+  <article>
+    <div class="box articleColor"></div><span>article</span>
+  </article>
+	<article>
+		<div class="box headerColor"></div><span>header</span>
+	</article>
+	<article>
+		<div class="box sectionColor"></div><span>section</span>
+	</article>	
+	<article>
+		<div class="box footerColor"></div><span>footer</span>
+	</article>
+  <article>
+    <div class="box addressColor"></div><span>address</span>
+  </article>
+  <article>
+    <div class="box timeColor"></div><span>time</span>
+  </article>
+</section>
+
+<article class="film_review">
+  <header>
+    <h2>Jurassic Park</h2>
+  </header>
+  <section class="main_review">
+    <p>Dinos were great!</p>
+  </section>
+  <section class="user_reviews">
+    <article class="user_review">
+      <p>Way too scary for me.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-16 19:00">May 16</time> 
+          <address>by Lisa.</address>
+        </p>
+      </footer>
+    </article>
+    <article class="user_review">
+      <p>I agree, dinos are my favorite.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-17 19:00">May 17</time> 
+          <address>by Tom.</address>
+        </p>
+      </footer>
+    </article>
+  </section>
+  <footer>
+    <p>
+      Posted on <time datetime="2015-05-15 19:00">May 15</time>
+      <address>
+        by <a href="mailto:matt@example.com">Matt West</a>
+      </address>
+    </p>
+  </footer>
+</article>
+</body>
+</html>

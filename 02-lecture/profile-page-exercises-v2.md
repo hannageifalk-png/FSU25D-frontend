@@ -43,7 +43,7 @@
     * **Footer:** Add a **`<footer>`** tag at the very bottom for copyright information.
 
 ---
-### Part 3: **Versioncontroll** (This should be repeted after every completed feature/development)
+### Part 3: **Version control** (This should be repeted after every completed feature/development)
 
 1.  **Commit and merge to main:**
     * Stage and commit the display flow update.
@@ -75,30 +75,12 @@
 ---
 
 
-### Part 4: **Advanced Styling** (Box Model and element flow)
+### Part 4: **Creative Styling** (Be create with the properties covered in the lecture)
 
-**Goal:** Apply the Box Model properties (`padding`, `margin`, `border`) and control element flow (`Display/Flexbox`) using appropriate CSS units.
+**Goal:** Apply the Box Model properties (`padding`, `margin`, `border`) and control element flow (`Display/Flexbox`) using appropriate CSS units. Be creative with your Profile Page. You may add
+* A Hero
+* Multiple columns
+* Sections such as header and footer
+* ...
 
-1.  **Centering and Width (Box Model):**
-    * In `css/style.css`, target the main content area (the **`<main>`** tag).
-    * **Width & Units:** Set its `width` using a relative unit, like `80%` or `50rem`.
-    * **Margin:** Use **`margin: 2rem auto;`** to center the entire profile page horizontally and provide space above/below.
-2.  **Styling the Sections (Box Model):**
-    * Target the **`.cv-section`** class.
-    * **Borders:** Add a subtle `border` (e.g., `1px solid #ccc;`).
-    * **Padding:** Use **`padding: 1.5rem;`** inside the sections to push content away from the border.
-    * **Spacing:** Use **`margin-bottom: 2rem;`** between sections to clearly separate them.
-3.  **Controlling Element Flow (`display`):**
-    * Target the list of skills (inside the `<ul>`).
-    * Use the **`li`** selector within that list (e.g., `ul li`).
-    * Change the display property to make the skills appear side-by-side, instead of stacking vertically:
-        ```css
-        /* Make list items flow horizontally */
-        ul li {
-            display: inline-block; 
-            margin-right: 15px; /* Add some space between items */
-            /* Add a small border or background for visual distinction */
-            border: 1px solid #007bff;
-            padding: 5px 10px;
-        }
-        ```
+You can improve the page endlessly. Remeber to alwase versioncontrol by branching out at the beginning of development, and commit/merge at the completion of a part or a feature

@@ -22,7 +22,7 @@
 * [CSS padding](https://www.w3schools.com/css/css_padding.asp)
 * [CSS margin](https://www.w3schools.com/css/css_margin.asp)
 * [CSS box model](https://www.w3schools.com/css/css_boxmodel.asp) 
-* [CSS display](https://www.w3schools.com/css/css_display.asp)
+* [CSS display](https://www.w3schools.com/css/css_display_visibility.asp)
 
 ### HTML Layout & Semantics:
 * [HTML layout](https://www.w3schools.com/html/html5_layout.asp)

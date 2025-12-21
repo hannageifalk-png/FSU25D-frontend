@@ -5,7 +5,10 @@
     border: none;;
 }
 
-div {
+header,
+section,
+.wrapper,
+footer {
     min-height: 100px;
     margin-bottom: 20px
 }
@@ -23,7 +26,6 @@ div {
     width: calc(100%/3);
     margin: 0 10px;
     background-color: lightgray;
-    border: 1px solid black;
 }
 
 .box:first-child {

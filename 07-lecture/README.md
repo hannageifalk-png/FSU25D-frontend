@@ -8,7 +8,7 @@
 - Study the code in [navigation](navigation) 
 
 ## 3. CSS variables and Google fonts
-- Study the code in [variables](variables)
+- Study the code in [variables](variables-and-fonts)
 
 
 ## Reading:

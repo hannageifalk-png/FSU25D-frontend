@@ -1,0 +1,25 @@
+/* Variables declared in global scope */
+:root {
+    /* Backgrpund colors */
+    --primary-bg-color: rgb(85, 85, 143);
+    --secondary-bg-color: rgb(124, 150, 161);
+    --third-bg-color: white;
+
+    /* Text colors */
+    --primary-text-color: rgb(67, 61, 61);
+    --secondary-text-color: white;
+    --header-text-color: rgb(48, 48, 94);
+
+    /* Spacing */
+    --primary-padding: 20px;
+    --primary-margin: 20px;
+
+    /* Fonts */
+    --header-font-family:"Pacifico", cursive;
+    --body-font-family: "Roboto", sans-serif;
+
+    /* Borders */
+    --border-color: orange;
+    --border-width: 2px;
+}
+

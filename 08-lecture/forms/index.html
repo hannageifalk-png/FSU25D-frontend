@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Forms</h1>
+    <h1>Register here!</h1>
+
+    <form action="" method="POST">
+        <label for="firstname">Firstname</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" value="John (readonly)" readonly>
+        
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" value="Doe (disabled)" disabled>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email">
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="5" maxlength="10">
+        
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Only ages between 18-30" min="18" max="30">
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="NO" selected>Norway</option>
+            <option value="SE">Sweden</option>
+            <option value="FI">Finland</option>
+            <option value="DK">Denmark</option>
+        </select>
+
+        <label for="gender">Gender</label>
+        <div class="form-row">
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female"  name="gender">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+        </div>
+
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" rows="5" placeholder="Comment here please"></textarea>
+
+        <div class="form-row">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <input type="submit" value="Register">
+        <!-- <button>Register</button> -->
+    </form>
 </body>
 </html>

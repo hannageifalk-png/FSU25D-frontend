@@ -3,7 +3,7 @@
 
 ## 1. Solutions on JS exercises
 - Study the code in [variables-&-logical-operations-&-flowcharts-solutions](variables-&-logical-operations-&-flowcharts-solutions) 
-- Study the code in [js-conditions-and-comparisons-solutions](js-conditions-and-comparisons-solutions) 
+- Study the code in [conditions-and-comparisons-solutions](conditions-and-comparisons-solutions) 
 
 
 ## 2. JS loops

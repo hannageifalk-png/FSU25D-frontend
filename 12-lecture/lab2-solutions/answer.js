@@ -96,6 +96,7 @@ function fruitColor(fruit) {
             color = 'red'
             break
     }
+    return color
 }
 
 // Solution 3
@@ -124,7 +125,7 @@ function fruitColor(fruit) {
  
 
  
-ANSWER = fruitColor ("apple");
+ANSWER = fruitColor ("plum");
  
 
 // I will now test your answer - change false to true to get a hint.

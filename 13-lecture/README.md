@@ -8,9 +8,9 @@
 
 ## 2. Code a game using game-starter, in following phases:
 1. Discuss a rough plan for the game in groups
-  - The goal of the game
-  - Game area and blocks
-  - Interactions and behaviors of the Baddie/Chars/Trinkets
+ - The goal of the game
+ - Game area and blocks
+ - Interactions and behaviors of the Baddie/Chars/Trinkets
 2. Draw the game plan (areas and blocks)
 3. Code the interaction
 4. Push the code to github.

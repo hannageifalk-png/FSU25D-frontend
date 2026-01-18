@@ -8,21 +8,7 @@ console.log("Ready to begin.");
 
 /** ======================================================================
  * Lab 3 - arrays
- *
- * Practise arrays. You might find useful help here:
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
- *
  */
-
-
-
-/** ----------------------------------------------------------------------
- * Section 1 . Arrays
- *
- * To copy an array use array.slice() to make a real copy, not a shallow one.
- *
- */
-
 
 
 /**

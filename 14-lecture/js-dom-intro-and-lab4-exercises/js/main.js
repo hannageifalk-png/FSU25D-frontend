@@ -197,7 +197,7 @@ main = document.getElementById('content')
 // }
 
 
-// Example 2 - More similar to how you would code in React, than example 1
+// Example 2 - More similar to how you would code in React
 for (let i = 1; i <= 5; i++) {
     let newBox = `
         <section class="box" onclick="removeOnClick(event)" style="margin: 5px">

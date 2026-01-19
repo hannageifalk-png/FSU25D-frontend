@@ -145,7 +145,7 @@ boxes[2].addEventListener('mouseover', function(e) {
     this.innerHTML = "Third circle"
     e.target.innerHTML = "Third circle"
 
-    // May create a bug, much better to make the function NOT depended on externa variables
+    // May create a bug in certain situations, much better to NOT depended on externa variables outside of the callback function
     // boxes[2].innerHTML = "Third circle"; 
 })
 
@@ -197,7 +197,7 @@ main = document.getElementById('content')
 // }
 
 
-// Example 2 - More similar to how you would code in React
+// Example 2 - More similar to how you would code in React, than example 1
 for (let i = 1; i <= 5; i++) {
     let newBox = `
         <section class="box" onclick="removeOnClick(event)" style="margin: 5px">

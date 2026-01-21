@@ -30,7 +30,7 @@ for (let i = 0; i < boxes.length; i++) {
     console.log(boxes[i]);
     boxes[i].style.margin = "5px"
     // use camelCase in JS, instead of kebab-case
-    boxes[i].style.backgroundColor = "skyblue"
+    // boxes[i].style.backgroundColor = "skyblue"
 }
 
 
@@ -241,12 +241,44 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
  */
 
 
+let circles = document.getElementsByTagName('div')
+console.log(circles);
+
+for (let i = 0; i < circles.length; i++) {
+    console.log("Before:", circles[i]);
+    // Solution 1
+    // circles[i].classList.remove('box');
+    // circles[i].classList.add('green-box');
+
+    // Solution 2
+    // circles[i].className = 'green-box';
+    
+    // Solution 3
+    circles[i].classList.replace('box', 'green-box');
+    console.log("After:", circles[i]);
+}
+
 
 
 /* 
  * Exercise 3
  */
 
+console.log(circles);
+
+for (let i = 0; i < circles.length; i++) {
+    // Solution 1
+    // circles[i].style.height = "120px";
+    // circles[i].style.width = "120px";
+
+    // Solution 2
+    // Uses kebab-case with style.cssText and backticks
+    circles[i].style.cssText += `
+        height: 120px;
+        width: 120px; 
+        background-color: lightcoral; 
+    `
+}
 
 
 
@@ -254,14 +286,29 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
 /* 
  * Exercise 4
  */
-
-
+let box5 = document.querySelector('main#content > section.box:last-of-type');
+box5.style.border = "4px solid red";
+console.log(box5);
 
 
 
 /* 
  * Exercise 5
  */
+
+let beigeBox = document.getElementById('beige-box'); 
+
+let newLink = document.createElement('a');
+newLink.href = "#";
+newLink.innerHTML = "My second link :)";
+ 
+beigeBox.appendChild(newLink);
+
+
+// Added som styling, nothing related to the exercise
+newLink.style.display = "block"
+newLink.style.marginTop = "10px"
+
 
 
 
@@ -270,21 +317,47 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
  * Exercise 6
  */
 
-
+newLink.setAttribute('href','#####')
+newLink.setAttribute('target', '_blank')
 
 
 /* 
  * Exercise 7
  */
 
+const mainContainer = document.getElementById('content');
+let newImage = document.createElement('img');
+ 
 
+// May assign with Object.assign OR
+// Object.assign(newImage, {
+//     src: './img/logo.png',
+//     width: 100,
+//     height: 100
+// });
+
+// OR like this
+newImage.src = './img/logo.png'
+newImage.width = '100'
+newImage.height = '100'
+
+main.appendChild(newImage);
 
 
 /* 
  * Exercise 8
  */
 
+// solution 1
+// newImage.onmouseover = function() {
+//     alert("You hovered over the image");
+// }
 
+    
+// solution 2
+newImage.addEventListener("mouseover", () => 
+    alert("You hovered over the image")
+);
 
 
 /* 
@@ -292,6 +365,47 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
  */
 
 
+// Solution 1
+newLink.addEventListener('click', function (e) {
+    e.preventDefault(); // stoppar länken från att navigera
+ 
+    let beigeBox = newLink.parentNode;
+    beigeBox.innerHTML = '';
+});
+
+
+// Solution 2
+// newLink.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     //currentTarget är att föredra över target; ser till att vi verkligen target elementet
+//     // som eventListener är attached till och inte t.ex. en <span> i länken
+//     let parent = e.currentTarget.parentNode;
+//     console.log("parent: ", parent);
+//     parent.replaceChildren(); // Ingen for loop needed!
+// })
+
+
+// Solution 3
+// newLink.addEventListener('click', deleteBeigeBox)
+// function deleteBeigeBox(e) { // e is the event object
+//     e.preventDefault(); // Prevent the default link behavior
+//     e.target.parentNode.remove();
+// }
+
+
+// Solution 4
+// newLink.addEventListener('click', removeOnClick);
+// function removeOnClick(e) {
+//     e.preventDefault();
+//     let parent = e.target.parentNode
+//     let links = parent.children
+//     console.log(parent.children)
+//     console.log(links)
+//     let arr = Array.from(links) // Convert HTMLCollection to an array
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i].remove() 
+//     }
+// }
 
 
 
@@ -299,3 +413,83 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
  * Exercise 10
  */
 
+
+// Solution 1
+const myNewSection = document.createElement("section");
+const myNewSectionHeight = 100;
+const myNewSectionWidth = 200;
+ 
+myNewSection.style.border = "groove rebeccapurple 5px";
+myNewSection.style.height = myNewSectionHeight + "px";
+myNewSection.style.width = myNewSectionWidth + "px";
+myNewSection.style.display = "flex";
+myNewSection.style.justifyContent = "space-around";
+myNewSection.style.alignItems = "center";
+ 
+
+console.log(myNewSection)
+main.appendChild(myNewSection);
+ 
+const greenLink = document.createElement("a");
+const blueLink = document.createElement("a");
+ 
+greenLink.innerHTML = "<b>green</b>";
+blueLink.textContent = "<b>blue</b>";
+greenLink.style.color = "green";
+blueLink.style.color = "blue";
+greenLink.href = "#";
+blueLink.href = "#";
+ 
+myNewSection.appendChild(greenLink);
+myNewSection.appendChild(blueLink);
+ 
+greenLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    greenLink.parentNode.style.backgroundColor = "green"
+});
+ 
+blueLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    blueLink.parentNode.style.backgroundColor = "blue"
+});
+ 
+
+
+// Solution 2
+
+let newSection = document.createElement('section')
+ 
+newSection.style.height = '100px'          
+newSection.style.width = '200px'
+newSection.style.border = '1px solid black'
+ 
+let greenButton = document.createElement('button')
+let blueButton = document.createElement('button')
+greenButton.innerHTML = 'Green Button'
+blueButton.innerHTML = 'Blue Button'
+ 
+main.appendChild(newSection)
+newSection.append(greenButton, blueButton)
+ 
+greenButton.addEventListener('click', (event) =>  {
+    event.preventDefault()
+ 
+    if(newSection.style.backgroundColor === 'green') {
+        newSection.style.backgroundColor = ''
+    } else {
+        newSection.style.backgroundColor = 'green'
+    }
+ 
+})
+ 
+blueButton.addEventListener('click', (event) =>  {
+    event.preventDefault()
+ 
+    if(newSection.style.backgroundColor === 'blue') {
+        newSection.style.backgroundColor = ''
+    } else {
+        newSection.style.backgroundColor = 'blue'
+    }
+ 
+})
+ 

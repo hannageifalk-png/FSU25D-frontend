@@ -1,12 +1,12 @@
-# Instructions
+w# Instructions
 
 
 ## 1. Solutions fetch exercises
-- [fetch-exercises-solutions](fetch-exercises-solutions)
+- [fetch-exercises-solutions](fetch-exercises-solutions-1-6)
 
 ## 2. DNS, URL, Client/Server, SSH, FTP, HTTP
-- [The Internet’s Secret Language](the-Internets-secret-language.pdf) 
-- [HTTP Request Protocol](HTTP-request-protocol.pdf) 
+- [The Internet’s Secret Language](the-internets-secret-language.pdf) 
+- [HTTP Request Protocol](http-request-protocol.pdf) 
 
 ## 3 How to work with Query strings
 - [query-strings-example](query-strings-example)

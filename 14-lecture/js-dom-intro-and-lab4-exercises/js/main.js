@@ -231,59 +231,105 @@ console.log('******************** Lab 4: DOM and Events ************************
  * Exercise 1
  */
 
-myTitle = document.getElementById('title')
+// let myTitle = document.getElementById('title')       //Redan deklarerad
 myTitle.innerHTML = 'Learning how to handle JS DOM and events';
 
+console.log(myTitle);
 
+ANSWER = myTitle
 
 /* 
  * Exercise 2
  */
 
+const elements = document.getElementsByTagName("div");
 
+for( let i = 0; i < elements.length; i++ ){
+    elements[i].classList.remove("box");
+    elements[i].classList.add("green-box");
+}
+
+console.log(elements);
+
+ANSWER = "All .box elements are now .green-box";
 
 
 /* 
  * Exercise 3
  */
 
+let boxes2 = document.getElementsByClassName("green-box");      
 
+for (let i = 0; i < boxes2.length; i++) {
+    boxes2[i].style.width = "120px";                 //När boxen är nummer-i så är bredd och höjd 120px
+    boxes2[i].style.height = "120px";
+}
 
 
 
 /* 
- * Exercise 4
- */
+* Exercise 4
+*/
 
+// Lösning 1
+// const boxes3 = document.querySelectorAll(".box");
+// const boxFem = boxes3[4]; // index 4 = femte elementet
 
+// boxFem.style.border = "2px solid orange";
 
+// Lösning 2
+boxes3 = document.querySelectorAll('main#content > section.box')    // väljer section-boxar som är direkta barn till main#content.
+boxes3[5].style.border = "4px solid orange"                         // Eftersom allt finns deklarererat där uppe sedan innan.
 
+console.log(boxes3)
 
 /* 
  * Exercise 5
  */
 
 
+let beigeBox = document.getElementById('beige-box') // Retrieve the beige box
+console.log(beigeBox);
+
+const newLink = document.createElement("a"); // skapa ett nytt <a>-element
+
+newLink.innerHTML = 'My second link :)';
+
+beigeBox.appendChild(newLink);
 
 
 /* 
- * Exercise 6
- */
+* Exercise 6
+*/
 
+// May change/add attributes by setAttribute(atrribute, vale)
+newLink.setAttribute('href', '#####');          // skapar en länk
+newLink.setAttribute('target', '_blank');       //öppnas i ny flik
 
-
+console.log(newLink);
 
 /* 
  * Exercise 7
  */
+const mainContent = document.getElementById("content");         // hämta element där bilden ska ligga
 
+const img = document.createElement("img");                      // skapa img-element
 
+img.src = "img/logo.png";                                       // sätt bildens källa (sökväg till bilden)
+img.alt = "A flower";                                           // Sätt alt-text, viktigt!
 
+img.style.width = 100;                                          // styling
+img.style.height = 100;
 
+mainContent.appendChild(img);                                   // Lägg in bild in bilden i DOM
+  
 /* 
  * Exercise 8
  */
 
+img.addEventListener("mouseover", () => {                        // mouseover = namn på event
+    alert("Du hovrar över bilden!");                             // => betyder 'gör detta'. Arrowfunktion = kör koden när eventet inträffar
+});                                                              // {...} koden som ska köras
 
 
 
@@ -293,9 +339,45 @@ myTitle.innerHTML = 'Learning how to handle JS DOM and events';
 
 
 
+newLink.addEventListener("click", (event) => {                  //eventListener lyssnar efter klicks
+    event.preventDefault();                                     // Stoppar länkens beteende
+    const beigeBox = newLink.parentNode;                        //parentNode går upp ett steg i DOM
+    beigeBox.innerHTML = "";                                    //innerHTML raderar allt innehåll
+});
+
+console.log(beigeBox);
+
+
+
 
 
 /* 
  * Exercise 10
  */
 
+const main3 = document.getElementById("content");        // allt läggs i main
+
+const newSection = document.createElement("section");   // skapa section
+
+newSection.style.border = "2px solid black";            //styling
+newSection.style.height = "100px";
+newSection.style.width = "200px";
+
+const greenButton = document.createElement("button");   //skapa knappar
+greenButton.innerText = "Green";
+
+const blueButton = document.createElement("button");
+blueButton.innerText = "Blue";
+
+greenButton.addEventListener("click", () => {           //eventListener
+    newSection.style.backgroundColor = "green";
+});
+
+blueButton.addEventListener("click", () => {
+    newSection.style.backgroundColor = "blue";
+});
+
+newSection.appendChild(greenButton);                    //Lägg knappar i section
+newSection.appendChild(blueButton);
+
+main3.appendChild(newSection);                           //Lägg section i main

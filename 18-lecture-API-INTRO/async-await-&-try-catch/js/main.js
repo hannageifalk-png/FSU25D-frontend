@@ -19,7 +19,6 @@ console.log('############## Fetch makes an AJAX request, that returns a Promise 
 //     // }  
 
 
-
 //     // console.log(response.text());
 //     return response.text();    // Use this when working with Text
 //     // return response.json(); // Use this when working with JSON. Equivelant to JSON.parse()
@@ -39,19 +38,10 @@ console.log('############## Fetch makes an AJAX request, that returns a Promise 
 
 
 
-
-
-
-
-
-
 /**
  * Demonstrates what throw new Error() is
  */
 // throw new Error(`Throwing an Error`);
-
-
-
 
 
 
@@ -66,7 +56,6 @@ console.log('############## Fetch makes an AJAX request, that returns a Promise 
 // .catch(error => {
 //     document.getElementById('text').innerHTML = "Opps got some internal problems. We have just dispatched a group of monkeys to fix the problem for you :)"
 // });
-
 
 
 
@@ -91,10 +80,9 @@ async function fetchData() {
     }
 }
 
+
+
 fetchData();
-
-
-
 
 
 

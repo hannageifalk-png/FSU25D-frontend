@@ -22,8 +22,7 @@ async function fetchBlogPosts() {
     } catch (error) {
         console.error('Error fetching blog posts:', error);
     }
-
-
 }
+
 
 fetchBlogPosts();

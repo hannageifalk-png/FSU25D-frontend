@@ -24,6 +24,10 @@ w# Instructions
 
 
 ## Reading
-- Typescipt links coming soon
+- [JS modules](https://www.w3schools.com/js/js_modules.asp)
+- [JS module export](https://www.w3schools.com/js/js_modules_export.asp)
+- [JS module import](https://www.w3schools.com/js/js_modules_import.asp)
+- [JS namespace](https://www.w3schools.com/js/js_modules_namespace.asp)
+- TypeScript reading instructions coming soon
 
 

@@ -24,10 +24,17 @@ w# Instructions
 
 
 ## Reading
+- [HTML/JS dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+
+<br />
+
 - [JS modules](https://www.w3schools.com/js/js_modules.asp)
 - [JS module export](https://www.w3schools.com/js/js_modules_export.asp)
 - [JS module import](https://www.w3schools.com/js/js_modules_import.asp)
 - [JS namespace](https://www.w3schools.com/js/js_modules_namespace.asp)
+
+<br />
+
 - TypeScript reading instructions coming soon
 
 

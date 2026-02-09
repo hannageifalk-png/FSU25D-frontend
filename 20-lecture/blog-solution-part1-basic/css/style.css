@@ -1,0 +1,37 @@
+/* Prompt 1: generate a minimalistic style for the blog posts, with centered layout */
+/* Prompt 2: center and style the same for the header with h1 */
+body {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.blog-post h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.blog-post p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.blog-post .metadata {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

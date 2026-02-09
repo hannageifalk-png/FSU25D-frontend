@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table  {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: lightblue;
+        }
+
+        tbody {
+            background-color: beige;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="number-of-words-input">
+    <button id="fetch-btn" onclick="fetchData()">Fetch Data</button>
+	
+    <table id="table-data">
+        <thead>
+            <tr>            <!-- Table Row -->
+                <th>Number of words</th> <!-- Table Header -->
+                <th>Result</th>
+            </tr>
+        <thead>
+        
+
+        <tbody>
+        <!-- Just identified that this code should be generated in JS -->
+            <!-- <tr>
+                <td>2</td>
+                <td>
+                    <ul>
+                        <li>wer</li>
+                        <li>sdf</li>
+                    </ul>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

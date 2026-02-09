@@ -11,9 +11,12 @@ async function fetchBlogPosts() {
 
         const main = document.querySelector('main');
         data.forEach(post => {
+
+            // Prompt 4: Make the post title a link to post.html, and send the id as a querystring
+
             main.innerHTML += `
-                <article>
-                    <h2>${post.title}</h2>
+                <article class="blog-post">
+                    <h2><a href="post.html?id=${post.id}"><h2>${post.title}</h2></a></h2>
                     <p>${post.date}</p>
                     <p>${post.text}</p>
                 </article>

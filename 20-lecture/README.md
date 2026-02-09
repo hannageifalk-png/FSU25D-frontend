@@ -11,7 +11,7 @@ w# Instructions
 
 ## 3 Blog-exercise solved with AI assistent
 - Study the code [blog-solution-part1-basic](blog-solution-part1-basic)
-- Study the code [blog-solution-part2-functions-and-modular](blog-solution-part2-functions-and-modular)
+- Study the code [blog-solution-part2-functions-and-modular](blog-solution-part2-functions-and-modules)
 
 
 ## 4 Present Assignment (Kunskapskontroll 3)

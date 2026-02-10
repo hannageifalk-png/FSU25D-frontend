@@ -38,6 +38,7 @@ body {
 
 .blog-post h2 a {
     text-decoration: none;
+    color: #333;
 }
 
 .blog-post h2:hover {
@@ -48,7 +49,6 @@ body {
 /* Prompt 3: Style the backbutton with id=back-button according to the rest of the minimalistic styling */
 #back-button {
     display: inline-block;
-    margin-top: 2rem;
     padding: 0.5rem 1rem;
     border: 1px solid #dfe6e9;
     color: #2d3436;

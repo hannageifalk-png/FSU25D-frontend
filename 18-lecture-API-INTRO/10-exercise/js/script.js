@@ -58,4 +58,5 @@ menu.addEventListener('click', (e) => {
     
         const content = e.target.closest('h2').nextElementSibling
         content.classList.toggle('hidden')
+
     })

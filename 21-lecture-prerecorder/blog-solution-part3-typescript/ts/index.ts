@@ -1,4 +1,4 @@
-import { fetchBlogPosts } from './api.js';
+import { fetchBlogPosts, type PostOverview } from './api.js';
 
 
 async function loadBlogPosts() {
@@ -12,8 +12,14 @@ loadBlogPosts();
 // Prompt 3: Generate with a loop, the HTML for posts with title, date and text, inlcude the HTML ass innerHTML in main a loop that goes through the data and creates a new article for each blog post. Work with the params title, date and text.
 // Prompt 4: Make the post title a link to post.html, and send the id as a querystring
 // Prompt 5: Refactor the code to use a function that creates a new article for each blog post.
-function renderPosts(posts) {
+function renderPosts(posts: PostOverview[]) {
     const main = document.querySelector('main');
+
+    if (!main) {
+        console.log("Main element not found")
+        return
+    }
+
     posts.forEach(post => {
         main.innerHTML += `
             <article class="blog-post">
